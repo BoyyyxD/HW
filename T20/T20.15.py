@@ -32,7 +32,7 @@ def has_equal_sides(array_2d):
 
 
 
-
+    
 if __name__ == "__main__":
     arr = np.array([x_coords, y_coords])
     arr_3d = get_3d_matrics(arr)

@@ -79,7 +79,7 @@ if __name__ == '__main__':
     print(test_input_in_range())
     print("Задача Т17.3: ")
     print(get_function_value(1,2,3, a=2, b=3, c=4))
-    print("Задача Т17.3: ")
+    print("Задача Т17.4: ")
     print(return_list_without_repetitions("abcd", "abcd", "b", a="abcd", b="d", c=3))
 
     
