@@ -23,9 +23,6 @@ def has_equal_sides(array_2d):
     dis1= (array_2d[0] - array_2d[1])**2
     dis2= (array_2d[0] - array_2d[2])**2
     dis3= (array_2d[1] - array_2d[2])**2
-    print(dis1)
-    print(dis2)
-    print(dis3)
     return sqrt(np.sum(dis1)) == sqrt(np.sum(dis2)) == sqrt(np.sum(dis3))   
 
 
@@ -37,6 +34,6 @@ if __name__ == "__main__":
     arr = np.array([x_coords, y_coords])
     arr_3d = get_3d_matrics(arr)
     print(np.rot90(arr_3d[0], k=1, axes=(0, 1)))
-    for i in arr_3d:
+    for i in range(len(arr_3d[0])):
         if has_equal_sides(arr_3d[i]):
             print(arr_3d[i])
